@@ -16,7 +16,7 @@ function verifyBrackets(str) {
             var leftInd = str.indexOf('(');  
             var rightInd = str.indexOf(')');
             if (leftInd < rightInd) {
-                str = str.slice(leftInd, n);
+                str = str.slice(leftInd+1, n);
             } else {
                 bool=false;
                 break;
