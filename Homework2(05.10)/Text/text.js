@@ -2,7 +2,7 @@
 //каждое ключевое слово выделить тегом <b>. Ввести достаточно крупный текст и вывести в страницу результат обработки
 
 var str = prompt('Enter your string: ');
-var keyWords = prompt('Enter keywords: ');
+var keyWords = prompt('Enter keywords: ', 'man, woman, dog');
 var keyWordsArray = keyWords.split(', ');
 
 document.writeln('Your text: ' + str);
