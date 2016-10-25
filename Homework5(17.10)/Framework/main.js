@@ -47,5 +47,39 @@ var Framework = {
     },
     randNum: function (min, max) {
         return Math.random() * (max - min) + min;
+    },
+    randNumInteger: function (min, max) {
+        return Math.round(this.randNum(min, max));
+    },
+    event: function (type, el, f) {
+        return {
+            if (typeof el.attachEvent() === 'function') {
+                el.attachEvent('on' + type, f);
+            } else if (typeof el.addEventListener() === 'function') {
+                el.addEventListener('type', f);
+            } else {
+                el.setAttribute('on' + type, 'f()');
+            }
+        }
+    },
+    unevent: function (type, el, f) {
+        return {
+            if (typeof el.detachEvent() === 'function') {
+                el.detachEvent('on' + type, f);
+            } else if (typeof el.removeEventListener() === 'function') {
+                el.removeEventListener('type', f);
+            } else {
+                el.setAttribute('on' + type, 'null');
+            }
+        }
+    },
+    dispatch: function (type, el, f) {
+        if (el.fireEvent() === 'function') {
+            var evnt = document.createEventObject(window.event);
+            event.srcElement.fireEvent("on" + type, f);
+        } else {
+            el.addEventListener(type, f);
+            el.dispatchEvent(evt);
+        }
     }
 }
