@@ -12,15 +12,15 @@ setInterval(function () {
     sec = d.getSeconds();
     context.clearRect(0, 0, 200, 200);
     drawWatch();
-    drawLine(sec*6, 50, "#F08080");
+    drawLine(sec * 6, 50, "#F08080");
 
     min = d.getMinutes()
     context.lineWidth = 2;
-    drawLine(min*6, 40, "red");
+    drawLine(min * 6, 40, "red");
 
     hour = d.getHours();
     context.lineWidth = 3;
-    drawLine(hour*30, 30, "#B22222");
+    drawLine(hour / 2, 30, "#B22222");
 }, 1000);
 
 
