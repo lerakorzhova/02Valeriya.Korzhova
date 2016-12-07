@@ -5,7 +5,8 @@ alert("Можно добавлять несколько аудиозаписей
 var audio = new Audio();
 document.body.appendChild(audio);
 var info = document.getElementById('info');
-var fileArr = [];
+var fileArr = [],
+    active = false;
 
 var play = document.getElementById("play");
 var playImg = document.getElementById("playImg");
@@ -27,7 +28,7 @@ function Play() {
         playMusic();
         getTime();
         if (audio.currentTime === audio.duration) nextSong(audio);
-    }, 500)
+    }, 1000)
 }
 
 
@@ -181,16 +182,25 @@ function prevSong(audio) {
                 var ind = i;
         }
         if ((ind - 1) < fileArr.length) {
-            playList(listArr[ind-1], fileArr[ind-1]);
+            playList(listArr[ind - 1], fileArr[ind - 1]);
         } else audio.pause();
     }
 }
 
-next.addEventListener('click',function(){
+next.addEventListener('click', function () {
     nextSong(audio);
 })
-prev.addEventListener('click',function(){
+prev.addEventListener('click', function () {
     prevSong(audio);
 })
 
+document.addEventListener("visibilitychange", function (e) {
+    if (document.hidden === true && audio.paused === false) active = true;
+    if (document.hidden === true && audio.paused === true) active = false;
+    isActive();
+})
 
+function isActive(){
+    if (document.hidden === true && active == true) audio.pause();
+    if (document.hidden === false && active == true) audio.play();
+}
