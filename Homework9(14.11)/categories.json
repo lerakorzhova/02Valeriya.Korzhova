@@ -1,0 +1,18 @@
+[{
+    "title": "Мягкие игрушки",
+    "hash": "#toys",
+    "filename": "toys.json",
+    "image": "img/toys.jpg"
+},
+{
+    "title": "Коты",
+    "hash": "#cats",
+    "filename": "cats.json",
+    "image": "img/cats.jpg"
+},
+{
+    "title": "Еда",
+    "hash": "#food",
+    "filename": "food.json",
+    "image": "img/food.jpg"
+}]

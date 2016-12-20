@@ -1,0 +1,23 @@
+.comment {
+    padding-left: 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: 1px solid #dedede;
+}
+.button {
+    width: 115px;
+    height: 30px;
+    border-radius: 5px;
+     background: #65acc8;
+    background: -webkit-gradient(linear, 0 0, 0 0, from(#65acc8), to(#4586ae));
+    background: -moz-linear-gradient(#65acc8, #4586ae);
+    background: linear-gradient(#65acc8, #4586ae);
+    color: rgba(25,45,55,.9);
+    margin-bottom:10px;
+}
+.button:active {
+    background: #e13c41;
+    background: -webkit-gradient(linear, 0 0, 0 0, from(#e13c41), to(#eb5a5f));
+    background: -moz-linear-gradient(#e13c41, #eb5a5f);
+    background: linear-gradient(#e13c41, #eb5a5f);
+}

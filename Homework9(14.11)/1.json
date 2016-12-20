@@ -1,0 +1,15 @@
+[{
+    "name": "Alex",
+    "age": "15",
+    "address": "Moskow"
+},
+{
+    "name": "Sasha",
+    "age": "18",
+    "address": "Mogilev"
+},
+{
+    "name": "Lesha",
+    "age": "9",
+    "address": "Minsk"
+}]

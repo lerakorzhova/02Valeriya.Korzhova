@@ -1,0 +1,112 @@
+.gameScreen {
+    height: 600px;
+    width: 900px;
+    margin: 0 auto;
+    position: relative;
+    background-size: cover;
+}
+
+.btn {
+    display: inline-block;
+    font-size: 80%;
+    color: rgba(255, 255, 255, .9);
+    text-shadow: #2e7ebd 0 1px 2px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 1.1;
+    white-space: pre-line;
+    padding: .7em 0;
+    border: 1px solid;
+    border-color: #60a3d8 #2970a9 #2970a9 #60a3d8;
+    border-radius: 6px;
+    outline: none;
+    background: #60a3d8 linear-gradient(#89bbe2, #60a3d8 50%, #378bce);
+    box-shadow: inset rgba(255, 255, 255, .5) 1px 1px;
+}
+
+.btnStart {
+    width: 250px;
+    height: 70px;
+    position: absolute;
+    bottom: 100px;
+    left: 325px;
+}
+
+.btn:first-line {
+    font-size: 170%;
+    font-weight: 700;
+}
+
+.btn:hover {
+    color: rgb(255, 255, 255);
+    background-image: linear-gradient(#9dc7e7, #74afdd 50%, #378bce);
+}
+
+.btn:active {
+    color: rgb(255, 255, 255);
+    border-color: #2970a9;
+    background-image: linear-gradient(#5796c8, #6aa2ce);
+    box-shadow: none;
+}
+
+.btnLevel {
+    width: 250px;
+    height: 70px;
+    margin-bottom: 20px;
+    margin-left: 325px;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+.levelBlock {
+    padding-top: 170px;
+}
+
+.card {
+    display: block;
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    padding: 0;
+    -webkit-box-shadow: 0px 7px 55px 9px rgba(0, 0, 0, 0.83);
+    -moz-box-shadow: 0px 7px 55px 9px rgba(0, 0, 0, 0.83);
+    box-shadow: 0px 7px 55px 9px rgba(0, 0, 0, 0.83);
+    border: 2px solid transparent;
+    border-radius: 5px;
+}
+
+.card:hover {
+    border: 2px solid #0195ff;
+}
+
+.gameOver {
+    background-color: rgba(0, 0, 0, 0.4);
+    font-size: 100px;
+    text-align: center;
+    color: white;
+}
+
+.btnStartAgain {
+    font-size: 13px;
+    width: 250px;
+    height: 70px;
+    position: absolute;
+    bottom: 100px;
+    left: 325px;
+}
+
+.gameOverBlock {
+    overflow: hidden;
+}
+
+.gameOverTime {
+    font-size: 40px;
+    text-align: center;
+    color: white;
+}
