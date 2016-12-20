@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>MyFilters App</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div id='block'>
+        <canvas id='canvasElem' width="700px" height="400px" class="canvasStyle">
+            Ваш браузер не поддерживает тег "canvas"
+        </canvas>
+        <div id="inputBlock">
+            <img id='bgImage' src="img/bg.png" />
+            <label id="newInput" for='fileInput'><strong id='colorChange'>Choose a file</strong> or drag it here.</label>
+            <input type="file" id="fileInput" class="customFile" name="file">
+        </div>
+    </div>
+    <button id='save'>Сохрани меня с:</button>
+    <div id='filters'>
+       <strong>Filters</strong><br>
+        <canvas class='filter' id="black-white"></canvas>
+        <canvas class='filter' id="negative"></canvas>
+        <canvas class='filter' id="sepia"></canvas>
+        <canvas class='filter' id="brightness"></canvas>
+        <canvas class='filter' id="noise"></canvas>
+        <canvas class='filter last' id="blur"></canvas>
+    </div>
+    
+    <div id='stickers'>
+       <strong>Stickers</strong><br>
+        <img class='sticker' id="1" src='img/1.png'>
+        <img class='sticker' id="2" src='img/2.png'>
+        <img class='sticker' id="3" src='img/3.png'>
+        <img class='sticker' id="4" src='img/4.png'>
+        <img class='sticker' id="5" src='img/5.png'>
+        <img class='sticker last' id="6" src='img/6.png'>
+    </div>
+    <script src='main.js'></script>
+</body>
+
+</html>
