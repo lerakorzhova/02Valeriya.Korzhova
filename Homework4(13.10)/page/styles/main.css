@@ -1,0 +1,85 @@
+body {
+	background-image: url(http://blog.recipc.com/media/sites/3/2015/06/recipc-polygon-white-background-1024x576.jpg)
+
+}
+.content {
+	background: rgba(135, 206, 250, 0.7);
+	border-radius: 30px;
+	padding: 40px 40px 40px 0px;
+	margin: 40px 70px;
+	font-family: times;
+}
+.menu_horiz {
+	list-style: none;
+	overflow: hidden;
+	margin: 0 27px 10px 0;
+}
+.menu_horiz li {
+	
+	display: inline;
+}
+.menu_horiz li a {
+	background: rgba(135, 206, 250, 1);
+	float: right;
+	padding: 10px;
+	border:1px solid black;
+	border-radius: 30px;
+}
+.menu_vert {
+
+	float:left;
+	overflow: hidden;
+    margin: 30px 20px;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+.menu_vert li {
+	background: rgba(135, 206, 250, 1);
+    border:1px solid black;
+    margin: 0 0 10px 0;
+    padding: 10px;
+	border-radius: 30px;
+	margin: 10px;    
+    list-style-type: none;
+}
+.header {
+    margin: 20px;
+    overflow: hidden;
+	border-radius: 30px;
+	font-family: cursive;
+	border:1px solid black;
+	text-align: center;
+	font-size: 30px;
+	background: rgba(135, 206, 250, 0.8);
+}
+.header2 {
+	text-align: center;
+	font-family: cursive;
+}
+
+.grid tr:nth-child(even) {background: #00BFFF}
+th { 
+    font-family: cursive;
+}
+table tr td {
+	border:1px solid black;
+	text-align: center;
+
+}
+.blog {
+	border-radius: 30px;
+	margin: 20px;
+	overflow: hidden;
+	border:1px solid black;
+}
+.img {
+	overflow: hidden;
+	width: 500px;
+    height: 300px;
+    margin: 10px 200px;
+}
+.text {
+	padding: 20px 60px;
+	border:1px solid black;
+}

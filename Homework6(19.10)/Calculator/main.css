@@ -1,0 +1,65 @@
+.buttons input,
+.button_clear {
+    width: 50px;
+    height: 30px;
+}
+.numbers {
+    position: fixed;
+    top: 95px;
+}
+
+.button_clear {
+    position: fixed;
+    top: 60px;
+    left:13px;
+    width: 228px;
+}
+.result{
+    
+}
+#res {
+    display: block;
+    font-family: sans-serif;
+    position: fixed;
+    left:18px;
+    top:0;
+    color:#B8A9F3;
+    padding:3px;
+    padding-top:5px;
+    height: 30px;
+    width: 220px;
+    margin: 10px auto;
+    border: 1px solid #B8A9F3;
+    border-radius: 5px;
+    outline: none;
+    overflow: hidden;
+}
+
+.button {
+    color: aliceblue;
+    border-radius: 5px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    border: 1px solid #9c9c9c;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0 0 1px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.4);
+    background: #6F50E7;
+    background: -webkit-gradient(linear, left top, left bottom, from(#B8A9F3), to(#6F50E7));
+    background: -moz-linear-gradient(-90deg, #B8A9F3, #6F50E7);
+}
+
+.button:hover {
+    background: #B8A9F3;
+    background: -webkit-gradient(linear, left top, left bottom, from(#6F50E7), to(#B8A9F3));
+    background: -moz-linear-gradient(-90deg, #6F50E7, #B8A9F3);
+}
+
+.button:active {
+    background: #6F50E7;
+}

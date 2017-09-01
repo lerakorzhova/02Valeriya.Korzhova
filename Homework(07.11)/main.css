@@ -1,0 +1,53 @@
+.layout {
+    width: 980px;
+    margin: auto;
+    position: relative;
+}
+
+.menu,
+.info_block {
+    position: absolute;
+}
+
+
+
+.menu {
+    width: 250px;
+    float: left;
+}
+
+.info_block {
+    width: 700px;
+    height: 600px;
+    border: 1px solid #DCDCDC;
+    margin-left: 250px;
+    top: 10px;
+    background-color: whitesmoke;
+}
+
+.shop {
+    display: block;
+    background-color: white;
+    border-radius: 10px;
+    width: 250px;
+    padding: 10px;
+    margin: 15px;
+}
+
+.help {
+    padding-left: 15px;
+}
+
+.inp {
+    border: 1px solid white;
+    resize: none;
+}
+
+.prod_info {
+    display: block;
+    background-color: whitesmoke;
+    width: 180px;
+    padding: 10px;
+    margin: 5px;
+    margin-top: 20px;
+}

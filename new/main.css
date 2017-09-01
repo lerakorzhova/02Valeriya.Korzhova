@@ -1,0 +1,94 @@
+#canvasElem {
+    border: 1px solid #C0C0C0;
+}
+
+.canvasStyle {
+    outline: 2px dashed #C0C0C0;
+    outline-offset: -20px;
+}
+
+#fileInput {
+    position: absolute;
+    top: 150px;
+    left: 0;
+    width: 250px;
+    width: 250px;
+    height: 20px;
+    opacity: 0;
+    z-index: 1;
+}
+
+#newInput {
+    position: absolute;
+    top: 260px;
+    left: 230px;
+    width: 250px;
+    height: 20px;
+    text-align: center;
+    font-size: 19px;
+    cursor: pointer;
+    color: #808080;
+}
+
+#colorChange:hover {
+    color: #B0E0E6;
+}
+
+#bgImage {
+    width: 150px;
+    position: absolute;
+    top: 110px;
+    left: 275px;
+    pointer-events: none;
+}
+
+#filters,
+#stickers {
+    width: 710px;
+    display: block;
+    position: relative;
+    margin: 10px 0;
+    padding-bottom: 10px;
+    color: #808080;
+    border-bottom: 1px solid #C0C0C0;
+}
+
+.last {
+    margin-right: 0;
+}
+
+.filter{
+    width: 105px;
+    height: 70px;
+    border: 1px solid #C0C0C0;
+    margin-right: 8px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.sticker {
+    width: 105px;
+    height: 105px;
+    margin-right: 8px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.isActive {
+    cursor: pointer;
+    color: red;
+}
+
+.isDragged {
+    background-color: #F0F8FF;
+    outline: 2px dashed #C0C0C0;
+    outline-offset: -20px;
+}
+
+#save{
+    border-radius: 7px;
+    margin-left: 10px;
+}
+a.button8:hover { background: rgba(255,255,255,.2); }
+a.button8:active { background: white; }
+}
